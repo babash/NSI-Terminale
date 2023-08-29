@@ -1,34 +1,5 @@
-\documentclass{report}
-\usepackage[utf8]{inputenc}
-\usepackage[frenchb]{babel}
-\usepackage{listings}
-\usepackage{hyperref}
-\usepackage{graphicx}
-\usepackage{fancyhdr}
-\usepackage{lastpage}
-\usepackage[most]{tcolorbox}
-\usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry}
-
-\lstset{basicstyle=\ttfamily, keywordstyle=\bfseries}
-\pagestyle{fancy}
-
-%\title{Thème 1 – Structures de données}
-%\date{}
-
-\begin{document}
-\lhead{Terminale NSI 2023-2024}
-\rhead{Thème 1 – Structures de données}
-\rfoot{Chapitre 1}
-\fancyfoot[C]{\textbf{Page \thepage}}
-\input{page_de_garde}
-
-
-
-
-
-
 \chapter{Interface et Implémentation - Listes, piles, files}
-Ce cours présente de nouvelles façons d'organiser et de traiter les données, que l'on appelle des structures de données. On rencontrera, notamment des structures linéaires comme la liste, la pile et la file, mais également des structures relationnelles telles que les arbres ou les graphes (à voir dans les chapitres suivant). Dans ce chapitre, nous allons commencer par distinguer la structure de données de son implémentation en illustrant les concepts avec le jeu ricochet robot.\\
+Ce cours présente de nouvelles façons d'organiser et de traiter les données, que l'on appelle des structures de données. On rencontrera, notamment, des structures linéaires comme la liste, la pile et la file, mais également des structures relationnelles telles que les arbres ou les graphes (à voir dans les chapitres suivant). Dans ce chapitre, nous allons commencer par distinguer la structure de données de son implémentation en illustrant les concepts avec le jeu ricochet robot.\\
 
 \begin{tcolorbox}[enhanced,
     colback=green!25!black!10!white,colframe=green!75!black,title=Structure de données,
@@ -39,7 +10,7 @@ Ce cours présente de nouvelles façons d'organiser et de traiter les données, 
 
 Le choix de la structure de données est important dès qu'on souhaite stocker et manipuler efficacement des données. Le choix se fait en fonction du \textbf{besoin}. Il est donc important de spécifier son besoin pour choisir la structure de données la plus adéquate.\\
 
-\includegraphics[scale=0.03]{mindblow}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow.png}{\fontfamily{cmss}\selectfont
 Pourquoi existe-t-il plusieurs structures de données ?\\
 }
 Le choix de la bonne structure de données permet de gagner beaucoup de temps de calcul. Ainsi, certain programmes ne pourraient pas exister si on utilisait la mauvaise structure de données. En effet, la résolution deviendrait trop longue.\\
@@ -85,11 +56,11 @@ Les listes regroupent des données de manière à pouvoir y accéder librement (
     Par exemple, sur l'image ci-contre, à l'index 4, on lit la valeur 31. 
 \end{minipage}\begin{minipage}{0.49\linewidth}
     \begin{center}
-        \includegraphics*[width=\linewidth]{Tableau_une_dimension.png}
+        \includegraphics*[width=\linewidth]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/Tableau_une_dimension.png}
     \end{center}
 \end{minipage}
 
-\includegraphics[scale=0.03]{mindblow}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow}{\fontfamily{cmss}\selectfont
 Comment les manipuler ?\\
 }
 
@@ -104,7 +75,7 @@ On peut manipuler des listes grâce à des fonctions. En voici les \textbf{primi
 
 C'est ce qu'on appelle \textbf{l'interface}.\\
 
-\includegraphics[scale=0.03]{mindblow}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow}{\fontfamily{cmss}\selectfont
 Comment les manipuler avec python ?\\
 }
 \begin{lstlisting}[language=Python]
@@ -150,7 +121,7 @@ C'est ce qu'on appelle \textbf{l'implémentation}.\\
 \newpage
 \textbf{Exemple avec le jeu ricochet robot}
 \begin{center}
-    \includegraphics[width=0.7\linewidth]{ricochet-robots-plateau}
+    \includegraphics[width=0.7\linewidth]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/ricochet-robots-plateau}
 \end{center}
 Ceci est une grille où peuvent se déplacer les robots. Pour les déplacer on utilise les fonctions "deplacer\_B()", "deplacer\_R()", "deplacer\_J()", "deplacer\_V()", respectivement pour les robots bleu, rouge, jaune et vert.
 Ces fonctions prennent en paramètre "haut", "bas", "gauche" ou "droite". Quand on appelle deplacer\_B(), le robot bleu se déplace d'une case dans la direction donnée en paramètre.\\
@@ -253,7 +224,7 @@ Sur quel repère se trouve le robot vert ?\\
 
 Les files sont adaptées pour stocker des élèments suivant une séquentialité. Les files FIFO suivent la politique "premier entré, premier sorti" (\textit{first in, first out} en anglais). Les premiers éléments ajoutés à la file seront les premiers à en être retirés; tandis que les LIFO suivent la règle "premier entré, premier sorti"(\textit{last in, last out} en anglais).\\
 
-\includegraphics[scale=0.03]{mindblow}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow}{\fontfamily{cmss}\selectfont
 Comment les manipuler ?\\
 }
 
@@ -266,7 +237,7 @@ Comment les manipuler ?\\
 
 
 
-\includegraphics[scale=0.03]{mindblow}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow}{\fontfamily{cmss}\selectfont
 Comment les manipuler avec python ?
 }\\[0.5cm]
 En utilisant des listes !
@@ -316,7 +287,7 @@ Les affichages sont-ils les mêmes en fonction de la structure utilisée ?
 
 \textbf{Exemple avec le jeu ricochet robot}\\
 \begin{center}
-    \includegraphics[width=0.7\linewidth]{ricochet-robots-plateau}
+    \includegraphics[width=0.7\linewidth]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/ricochet-robots-plateau}
 \end{center}
 Reprenons le même exemple que précédemment. Cette fois vous devez envoyer les instructions avec une file dans un premier temps, puis avec une pile dans un deuxième temps.\\
 
@@ -376,6 +347,3 @@ A votre tour de faire jouer les autres !\\
 
 
 Bravo, vous savez maintenant expliquer les principes théoriques d'une structure de données, en préciser l'interface et implémentation en python les listes, les piles et les files ! 
-
-
-\end{document}
