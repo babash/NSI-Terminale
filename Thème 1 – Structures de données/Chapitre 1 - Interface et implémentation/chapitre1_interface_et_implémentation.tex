@@ -10,7 +10,7 @@ Ce cours présente de nouvelles façons d'organiser et de traiter les données, 
 
 Le choix de la structure de données est important dès qu'on souhaite stocker et manipuler efficacement des données. Le choix se fait en fonction du \textbf{besoin}. Il est donc important de spécifier son besoin pour choisir la structure de données la plus adéquate.\\
 
-\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow.png}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Common_blob/mindblow.png}{\fontfamily{cmss}\selectfont
 Pourquoi existe-t-il plusieurs structures de données ?\\
 }
 Le choix de la bonne structure de données permet de gagner beaucoup de temps de calcul. Ainsi, certain programmes ne pourraient pas exister si on utilisait la mauvaise structure de données. En effet, la résolution deviendrait trop longue.\\
@@ -60,7 +60,7 @@ Les listes regroupent des données de manière à pouvoir y accéder librement (
     \end{center}
 \end{minipage}
 
-\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Common_blob/mindblow.png}{\fontfamily{cmss}\selectfont
 Comment les manipuler ?\\
 }
 
@@ -75,7 +75,7 @@ On peut manipuler des listes grâce à des fonctions. En voici les \textbf{primi
 
 C'est ce qu'on appelle \textbf{l'interface}.\\
 
-\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Common_blob/mindblow.png}{\fontfamily{cmss}\selectfont
 Comment les manipuler avec python ?\\
 }
 \begin{lstlisting}[language=Python]
@@ -213,6 +213,31 @@ Sur quel repère se trouve le robot rouge ?\\
 \end{lstlisting}
 Sur quel repère se trouve le robot vert ?\\
 
+\underline{Exercice 7:}
+\begin{lstlisting}[language=Python]
+    D = ["haut", "droite", "bas", "gauche"]
+
+    a = 5
+    while a >= 0:
+        deplacer_J(D[1])
+        deplacer_J(D[-2])
+        a -= 1
+
+    for i range(3):
+        deplacer_J(D[i])
+\end{lstlisting}
+Sur quel repère se trouve le robot jaune ?\\
+
+\underline{Exercice 8:}
+\begin{lstlisting}[language=Python]
+    D = [["haut", "bas"], ["gauche", "droite"]]
+
+    deplacer_R(D[0][1])
+    for i in range(14):
+        deplacer_R(D[1][0])
+\end{lstlisting}
+Sur quel repère se trouve le robot rouge ?\\
+
 À votre tour de faire jouer les autres. Mettez-vous par groupe de 3 et faites une liste d'instructions pour déplacer un robot. Les autres groupes devront réussir à trouver sur quel repère le robot se trouvent à la fin de votre programme.
 % \begin{center}
 %     \includegraphics[width=0.5\linewidth]{jeu_ligne}
@@ -224,7 +249,7 @@ Sur quel repère se trouve le robot vert ?\\
 
 Les files sont adaptées pour stocker des élèments suivant une séquentialité. Les files FIFO suivent la politique "premier entré, premier sorti" (\textit{first in, first out} en anglais). Les premiers éléments ajoutés à la file seront les premiers à en être retirés; tandis que les LIFO suivent la règle "premier entré, premier sorti"(\textit{last in, last out} en anglais).\\
 
-\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Common_blob/mindblow.png}{\fontfamily{cmss}\selectfont
 Comment les manipuler ?\\
 }
 
@@ -237,7 +262,7 @@ Comment les manipuler ?\\
 
 
 
-\includegraphics[scale=0.03]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/mindblow}{\fontfamily{cmss}\selectfont
+\includegraphics[scale=0.03]{Common_blob/mindblow.png}{\fontfamily{cmss}\selectfont
 Comment les manipuler avec python ?
 }\\[0.5cm]
 En utilisant des listes !
