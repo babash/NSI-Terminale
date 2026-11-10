@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Babash - NSI Tani Malandi, licence CC BY-SA 4.0 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="230" viewBox="0 0 320 230">
+<title>Un arbre binaire</title>
+<rect width="320" height="230" fill="#ffffff"/>
+<line x1="160.0" y1="25" x2="80.0" y2="85" stroke="#000000" stroke-width="2.5"/>
+<line x1="160.0" y1="25" x2="240.0" y2="85" stroke="#000000" stroke-width="2.5"/>
+<line x1="80.0" y1="85" x2="40.0" y2="145" stroke="#000000" stroke-width="2.5"/>
+<line x1="80.0" y1="85" x2="120.0" y2="145" stroke="#000000" stroke-width="2.5"/>
+<line x1="240.0" y1="85" x2="200.0" y2="145" stroke="#000000" stroke-width="2.5"/>
+<line x1="240.0" y1="85" x2="280.0" y2="145" stroke="#000000" stroke-width="2.5"/>
+<line x1="40.0" y1="145" x2="20.0" y2="205" stroke="#000000" stroke-width="2.5"/>
+<line x1="40.0" y1="145" x2="60.0" y2="205" stroke="#000000" stroke-width="2.5"/>
+<line x1="120.0" y1="145" x2="100.0" y2="205" stroke="#000000" stroke-width="2.5"/>
+<line x1="120.0" y1="145" x2="140.0" y2="205" stroke="#000000" stroke-width="2.5"/>
+<line x1="200.0" y1="145" x2="180.0" y2="205" stroke="#000000" stroke-width="2.5"/>
+<line x1="200.0" y1="145" x2="220.0" y2="205" stroke="#000000" stroke-width="2.5"/>
+<line x1="280.0" y1="145" x2="260.0" y2="205" stroke="#000000" stroke-width="2.5"/>
+<line x1="280.0" y1="145" x2="300.0" y2="205" stroke="#000000" stroke-width="2.5"/>
+<circle cx="160.0" cy="25" r="13" fill="#1565c0" stroke="#000000" stroke-width="2.5"/>
+<circle cx="80.0" cy="85" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="240.0" cy="85" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="40.0" cy="145" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="120.0" cy="145" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="200.0" cy="145" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="280.0" cy="145" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="20.0" cy="205" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="60.0" cy="205" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="100.0" cy="205" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="140.0" cy="205" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="180.0" cy="205" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="220.0" cy="205" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="260.0" cy="205" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+<circle cx="300.0" cy="205" r="13" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+</svg>
