@@ -36,18 +36,6 @@ def get_all_pokemon_data():
     return pokemon_names, pokemon_data
 
 
-def Pokemon_from_data(pokemon_data):
-    stats = {}
-    for stat in pokemon_data['stats']:
-        stats[stat['stat']['name']] = stat['base_stat']
-    return Pokemon(pokemon_data['name'],
-                    pokemon_data['id'],
-                    pokemon_data['height'],
-                    pokemon_data['weight'],
-                    stats,
-                    pokemon_data['sprites']['front_default'],
-                    pokemon_data['cries']['latest'])
-
 def generate_pokemon_json():
     import json
     pokemon_names, pokemon_data = get_all_pokemon_data()
