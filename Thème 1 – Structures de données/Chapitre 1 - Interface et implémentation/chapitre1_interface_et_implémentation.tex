@@ -13,7 +13,7 @@ Le choix de la structure de données est important dès qu'on souhaite stocker e
 \includegraphics[scale=0.03]{Common_blob/mindblow.png}{\fontfamily{cmss}\selectfont
 Pourquoi existe-t-il plusieurs structures de données ?\\
 }
-Le choix de la bonne structure de données permet de gagner beaucoup de temps de calcul. Ainsi, certain programmes ne pourraient pas exister si on utilisait la mauvaise structure de données. En effet, la résolution deviendrait trop longue.\\
+Le choix de la bonne structure de données permet de gagner beaucoup de temps de calcul. Ainsi, certains programmes ne pourraient pas exister si on utilisait la mauvaise structure de données. En effet, la résolution deviendrait trop longue.\\
 
 
 
@@ -25,7 +25,7 @@ Commençons par les structures de données suivantes :
 \end{itemize}
 
 \begin{tcolorbox}[enhanced,
-    colback=green!25!black!10!white,colframe=green!75!black,title=Structuress linéaires,
+    colback=green!25!black!10!white,colframe=green!75!black,title=Structures linéaires,
     drop fuzzy shadow,watermark color=white]
 Ces trois structures de données sont dites \textbf{linéaires} : les données sont organisées dans un ordre dans lequel les éléments sont liés les uns après les autres.
 \end{tcolorbox}
@@ -187,7 +187,7 @@ Sur quel repère se trouve le robot vert?\\
 \underline{Exercice 5:}
 \begin{lstlisting}[language=Python]
     D = []
-    if D :
+    if not D :
         print("D est vide !")
 
     D.append("bas")
@@ -199,7 +199,7 @@ Sur quel repère se trouve le robot vert?\\
     deplacer_R(D[3])
     deplacer_R(D[-2])
     del(D[1])
-    if D :
+    if not D :
         print("D est vide !")
     else :
         deplacer_R(D[len(D)-2])
@@ -225,7 +225,7 @@ Sur quel repère se trouve le robot vert ?\\
     D = ["haut", "droite", "bas", "gauche"]
 
     a = 5
-    while a >= 0:
+    while a > 0:
         deplacer_J(D[1])
         deplacer_J(D[-2])
         a -= 1
@@ -241,18 +241,18 @@ Sur quel repère se trouve le robot jaune ?\\
     D = [["haut", "bas"], ["gauche", "droite"]]
 
     deplacer_R(D[0][1])
-    for i in range(14):
-        deplacer_R(D[1][0])
+    for i in range(13):
+        deplacer_R(D[1][1])
 \end{lstlisting}
 Sur quel repère se trouve le robot rouge ?\\
 
-À votre tour de faire jouer les autres. Mettez-vous par groupe de 3 et faites une liste d'instructions pour déplacer un robot. Les autres groupes devront réussir à trouver sur quel repère le robot se trouvent à la fin de votre programme.
+À votre tour de faire jouer les autres. Mettez-vous par groupe de 3 et faites une liste d'instructions pour déplacer un robot. Les autres groupes devront réussir à trouver sur quel repère le robot se trouve à la fin de votre programme.
 
 
 \newpage
 \section{Les files FIFO et les piles LIFO}
 
-Les files sont adaptées pour stocker des élèments suivant une séquentialité. Les files FIFO suivent la politique "premier entré, premier sorti" (\textit{first in, first out} en anglais). Les premiers éléments ajoutés à la file seront les premiers à en être retirés; tandis que les LIFO suivent la règle "dernier entré, premier sorti" (\textit{last in, first out} en anglais).\\
+Les files sont adaptées pour stocker des éléments suivant une séquentialité. Les files FIFO suivent la politique "premier entré, premier sorti" (\textit{first in, first out} en anglais). Les premiers éléments ajoutés à la file seront les premiers à en être retirés; tandis que les LIFO suivent la règle "dernier entré, premier sorti" (\textit{last in, first out} en anglais).\\
 
 \includegraphics[scale=0.03]{Common_blob/mindblow.png}{\fontfamily{cmss}\selectfont
 Comment les manipuler ?\\
