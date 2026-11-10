@@ -56,7 +56,7 @@ Les listes regroupent des données de manière à pouvoir y accéder librement (
     Par exemple, sur l'image ci-contre, à l'index 4, on lit la valeur 31. 
 \end{minipage}\begin{minipage}{0.49\linewidth}
     \begin{center}
-        \includegraphics*[width=\linewidth]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/Tableau_une_dimension.png}
+        \includegraphics*[width=\linewidth]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/tableau-une-dimension.pdf}
     \end{center}
 \end{minipage}
 
@@ -121,12 +121,13 @@ C'est ce qu'on appelle \textbf{l'implémentation}.\\
 \newpage
 \textbf{Exemple avec le jeu ricochet robot}
 \begin{center}
-    \includegraphics[width=0.7\linewidth]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/ricochet-robots-plateau}
+    \includegraphics[width=0.64\linewidth]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/ricochet-robots-plateau.pdf}
 \end{center}
 Ceci est une grille où peuvent se déplacer les robots. Pour les déplacer on utilise les fonctions "deplacer\_B()", "deplacer\_R()", "deplacer\_J()", "deplacer\_V()", respectivement pour les robots bleu, rouge, jaune et vert.
 Ces fonctions prennent en paramètre "haut", "bas", "gauche" ou "droite". Quand on appelle deplacer\_B(), le robot bleu se déplace d'une case dans la direction donnée en paramètre.\\
 
 
+\needspace{9\baselineskip}
 \underline{Exercice 1:}
 \begin{lstlisting}[language=Python]
     D = ["haut", "bas", "gauche", "droite"]
@@ -137,6 +138,7 @@ Ces fonctions prennent en paramètre "haut", "bas", "gauche" ou "droite". Quand 
 \end{lstlisting}
 Sur quel repère se trouve le robot bleu?\\
 
+\needspace{11\baselineskip}
 \underline{Exercice 2:}
 \begin{lstlisting}[language=Python]
     D = ["haut", "bas", "gauche", "droite"]
@@ -151,6 +153,7 @@ Sur quel repère se trouve le robot bleu?\\
 Sur quel repère se trouve le robot jaune?
 
 \newpage
+\needspace{10\baselineskip}
 \underline{Exercice 3:}
 \begin{lstlisting}[language=Python]
     D = ["haut", "bas", "gauche", "droite"]
@@ -163,6 +166,7 @@ Sur quel repère se trouve le robot jaune?
 \end{lstlisting}
 Sur quel repère se trouve le robot vert ?\\
 
+\needspace{14\baselineskip}
 \underline{Exercice 4:}
 \begin{lstlisting}[language=Python]
     D = ["haut", "bas", "gauche", "droite"]
@@ -179,6 +183,7 @@ Sur quel repère se trouve le robot vert ?\\
 \end{lstlisting}
 Sur quel repère se trouve le robot vert?\\
 
+\needspace{20\baselineskip}
 \underline{Exercice 5:}
 \begin{lstlisting}[language=Python]
     D = []
@@ -190,7 +195,7 @@ Sur quel repère se trouve le robot vert?\\
     deplacer_R(D[0])
     D[0] = "droite"
     deplacer_R(D[0])
-    D.extend("haut","bas","gauche")
+    D.extend(["haut", "bas", "gauche"])
     deplacer_R(D[3])
     deplacer_R(D[-2])
     del(D[1])
@@ -202,6 +207,7 @@ Sur quel repère se trouve le robot vert?\\
 \end{lstlisting}
 Sur quel repère se trouve le robot rouge ?\\
 
+\needspace{10\baselineskip}
 \underline{Exercice 6:}
 \begin{lstlisting}[language=Python]
     D = ["haut", "bas", "gauche", "droite"]
@@ -213,6 +219,7 @@ Sur quel repère se trouve le robot rouge ?\\
 \end{lstlisting}
 Sur quel repère se trouve le robot vert ?\\
 
+\needspace{13\baselineskip}
 \underline{Exercice 7:}
 \begin{lstlisting}[language=Python]
     D = ["haut", "droite", "bas", "gauche"]
@@ -223,11 +230,12 @@ Sur quel repère se trouve le robot vert ?\\
         deplacer_J(D[-2])
         a -= 1
 
-    for i range(3):
+    for i in range(3):
         deplacer_J(D[i])
 \end{lstlisting}
 Sur quel repère se trouve le robot jaune ?\\
 
+\needspace{9\baselineskip}
 \underline{Exercice 8:}
 \begin{lstlisting}[language=Python]
     D = [["haut", "bas"], ["gauche", "droite"]]
@@ -239,21 +247,18 @@ Sur quel repère se trouve le robot jaune ?\\
 Sur quel repère se trouve le robot rouge ?\\
 
 À votre tour de faire jouer les autres. Mettez-vous par groupe de 3 et faites une liste d'instructions pour déplacer un robot. Les autres groupes devront réussir à trouver sur quel repère le robot se trouvent à la fin de votre programme.
-% \begin{center}
-%     \includegraphics[width=0.5\linewidth]{jeu_ligne}
-% \end{center}
 
 
 \newpage
 \section{Les files FIFO et les piles LIFO}
 
-Les files sont adaptées pour stocker des élèments suivant une séquentialité. Les files FIFO suivent la politique "premier entré, premier sorti" (\textit{first in, first out} en anglais). Les premiers éléments ajoutés à la file seront les premiers à en être retirés; tandis que les LIFO suivent la règle "premier entré, premier sorti"(\textit{last in, last out} en anglais).\\
+Les files sont adaptées pour stocker des élèments suivant une séquentialité. Les files FIFO suivent la politique "premier entré, premier sorti" (\textit{first in, first out} en anglais). Les premiers éléments ajoutés à la file seront les premiers à en être retirés; tandis que les LIFO suivent la règle "dernier entré, premier sorti" (\textit{last in, first out} en anglais).\\
 
 \includegraphics[scale=0.03]{Common_blob/mindblow.png}{\fontfamily{cmss}\selectfont
 Comment les manipuler ?\\
 }
 
-\begin{tabular}{l|l}
+\begin{tabular}{l|p{0.55\linewidth}}
      \textbf{Enfiler} & ajoute un élément dans la file. Le terme anglais correspondant est enqueue.\\
      \textbf{Défiler} & renvoie le prochain élément de la file, et le retire de la file. \textit{dequeue} en anglais.\\
      \textbf{La file est-elle vide ?} & renvoie  " vrai  " si la file est vide,  " faux  " sinon.\\
@@ -291,12 +296,12 @@ En utilisant des listes !
     print(lifo.pop(-1)) # retire et affiche le prochain element de la pile
 
     # Si la file n'est pas vide, retire puis affiche le prochain element
-    if not fifo.empty():
+    if len(fifo) > 0:
         print(fifo.pop(0)) 
 
     # Meme methode pour la pile
-    if not lifo.empty():
-        print(lifoq.pop(-1)) 
+    if len(lifo) > 0:
+        print(lifo.pop(-1)) 
 
 
     # Compte le nombre d'elements dans la file
@@ -312,56 +317,59 @@ Les affichages sont-ils les mêmes en fonction de la structure utilisée ?
 
 \textbf{Exemple avec le jeu ricochet robot}\\
 \begin{center}
-    \includegraphics[width=0.7\linewidth]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/ricochet-robots-plateau}
+    \includegraphics[width=0.64\linewidth]{Thème 1 – Structures de données/Chapitre 1 - Interface et implémentation/BLOB/ricochet-robots-plateau.pdf}
 \end{center}
 Reprenons le même exemple que précédemment. Cette fois vous devez envoyer les instructions avec une file dans un premier temps, puis avec une pile dans un deuxième temps.\\
 
 
+\needspace{11\baselineskip}
 Exercice 1:
 \begin{lstlisting}[language=Python]
+    fifo = []
     fifo.append("bas")
     fifo.append("bas")
     fifo.append("droite")
 
-    while not fifoq.empty():
+    while len(fifo) > 0:
         d = fifo.pop(0)
         deplacer_B(d)
 
 \end{lstlisting}
 Sur quel repère se trouve le robot bleu?\\
 
+\needspace{13\baselineskip}
 Exercice 2:
 \begin{lstlisting}[language=Python]
+    fifo = []
     fifo.append("haut")
     fifo.append("haut")
     fifo.append("gauche")
     fifo.append("gauche")
     fifo.append("gauche")
 
-    while not fifo.empty():
-        d = fifoq.get()
+    while len(fifo) > 0:
+        d = fifo.pop(0)
         deplacer_V(d)
 \end{lstlisting}
 Sur quel repère se trouve le robot vert?\\
 
+\needspace{17\baselineskip}
 Exercice 3:
 \begin{lstlisting}[language=Python]
-    import queue 
-
     # Creer une pile LIFO vide 
-    fifoq = queue.LifoQueue()
+    lifo = []
 
     for i in range(2):
-        lifoq.put("bas")
+        lifo.append("bas")
     for i in range(4):
-        lifoq.put("droite")
+        lifo.append("droite")
     for i in range(5):
-        lifoq.put("bas")
+        lifo.append("bas")
     for i in range(2):
-        lifoq.put("gauche")
+        lifo.append("gauche")
 
-    while not fifoq.empty():
-        d = lifoq.get()
+    while len(lifo) > 0:
+        d = lifo.pop(-1)
         deplacer_J(d)
 \end{lstlisting}
 Sur quel repère se trouve le robot jaune?\\

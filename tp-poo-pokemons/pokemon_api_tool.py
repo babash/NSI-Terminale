@@ -50,10 +50,13 @@ def Pokemon_from_data(pokemon_data):
 
 def generate_pokemon_json():
     import json
+    pokemon_names, pokemon_data = get_all_pokemon_data()
     with open('pokemon_data.json', 'w') as json_file:
         json.dump(pokemon_data, json_file)
     with open('pokemon_names.json', 'w') as json_file:
         json.dump(pokemon_names, json_file)
-    pokemon_names, pokemon_data = get_all_pokemon_data()
+    print(f"Retrieved data for {len(pokemon_data)}/{len(pokemon_names)} Pokémon.")
 
-print(f"Retrieved data for {len(pokemon_data)}/{len(pokemon_names)} Pokémon.")
+
+if __name__ == "__main__":
+    generate_pokemon_json()
