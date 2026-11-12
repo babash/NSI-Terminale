@@ -49,7 +49,7 @@ Un notebook Jupyter en 4 exercices, autour d'une classe `Pokemon` fournie (nom, 
 
 ## Contact
 
-Conçu par Babash - NSI Tani Malandi pour les classes de NSI de terminale de l'académie de Mayotte.
+Conçu par Babash - NSI Tani Malandi pour les classes de NSI de terminale de l'académie de Mayotte, avec l'aide de l'IA (au moins pour une part).
 Une question, une idée, un bug ? Les [issues GitHub](https://github.com/babash/NSI-Terminale/issues) du dépôt. Toutes les ressources sont sur le site [Ressources NSI et SNT](https://babash.github.io/Babash-NSI-SNT/).
 
 ## Licence
